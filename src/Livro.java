@@ -1,53 +1,64 @@
-//ATRIBUTOS----------------------------------------------------------------------------
-private String titulo;
-private String autor;
-private String localizacao;
+public class Livro {
 
-//MÉTODOS------------------------------------------------------------------------------
-public void consultarLivro(){
-    System.out.println("Livro: " + getTitulo() + ", autor: " + getAutor() + ", localizado: " + getLocalizacao()); }
+    // ATRIBUTOS----------------------------------------------------------------------------
+    private String titulo;
+    private String autor;
+    private String localizacao;
 
-public void emprestarLivro(String localizacao){ this.localizacao = localizacao; }
+    // MÉTODOS------------------------------------------------------------------------------
 
-public void devolverLivro(){ this.localizacao = "Biblioteca"; }
+    public void consultarLivro() {
+        System.out.println("Livro: " + getTitulo() + ", autor: " + getAutor() + ", localizado: " + getLocalizacao());
+    }
 
-//MÉTODO CONSTRUTOR--------------------------------------------------------------------
-public Livro(String titulo, String autor) {
-    this.titulo = titulo;
-    this.autor = autor;
-    this.localizacao = "Biblioteca";
-}
+    public void emprestarLivro(String localizacao) {
+        this.localizacao = localizacao;
+    }
 
-//GETTERS AND SETTERS------------------------------------------------------------------
-public String getTitulo() {
-    return titulo;
-}
+    public void devolverLivro() {
+        this.localizacao = "Biblioteca";
+    }
 
-public void setTitulo(String titulo) {
-    this.titulo = titulo;
-}
+    // MÉTODO
+    // CONSTRUTOR--------------------------------------------------------------------
+    public Livro(String titulo, String autor) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.localizacao = "Biblioteca";
+    }
 
-public String getAutor() {
-    return autor;
-}
+    // GETTERS AND
+    // SETTERS------------------------------------------------------------------
+    public String getTitulo() {
+        return titulo;
+    }
 
-public void setAutor(String autor) {
-    this.autor = autor;
-}
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
 
-public String getLocalizacao() {
-    return localizacao;
-}
+    public String getAutor() {
+        return autor;
+    }
 
-public void setLocalizacao(String localizacao) {
-    this.localizacao = localizacao;
-}
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
 
-//ToSTRING---------------------------------------------------------------------------
-@Override
-public String toString() {
-    return "Livro{" + "titulo='" + titulo + '\'' +
-            ", autor='" + autor + '\'' +
-            ", localizacao='" + localizacao + '\'' +
-            '}';
+    public String getLocalizacao() {
+        return localizacao;
+    }
+
+    public void setLocalizacao(String localizacao) {
+        this.localizacao = localizacao;
+    }
+
+    // ToSTRING---------------------------------------------------------------------------
+    @Override
+    public String toString() {
+        return "Livro{" + "titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", localizacao='" + localizacao + '\'' +
+                '}';
+    }
 }
