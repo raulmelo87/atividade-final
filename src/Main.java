@@ -6,6 +6,11 @@ public class Main {
         li1.consultarLivro();
         System.out.println("---------------------------------------------------------------------------------");
 
+        Pessoa pe1 = new Pessoa("Maria", 20, "feminino");
+        pe1.fazerAniversario();
+        System.out.println(pe1);
+        System.out.println("---------------------------------------------------------------------------------");
+
 
 
     }
