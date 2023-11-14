@@ -1,3 +1,4 @@
+public class Professor extends Pessoa{
 //ATRIBUTOS---------------------------------------------------------------------------
 private String area;
 private float salario;
@@ -42,4 +43,6 @@ public String toString() {
             "especialidade='" + area + '\'' +
             ", salario=" + salario +
             "} " + super.toString();
+    }
+
 }
