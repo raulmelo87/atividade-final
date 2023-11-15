@@ -11,6 +11,12 @@ public class Main {
         System.out.println(pe1);
         System.out.println("---------------------------------------------------------------------------------");
 
+        Aluno al1 = new Aluno("José", 30, "masculino", "ADS", 5);
+        String nomeAluno = al1.getNome();
+        String cursoAluno = al1.getCurso();
+        String statusAprovacao = al1.estaAprovado(al1.getNota());
+        System.out.println("Nome do aluno: " + nomeAluno + ", Curso: " + cursoAluno + ", Status de aprovação: " + statusAprovacao);
+        System.out.println("---------------------------------------------------------------------------------");
 
 
     }

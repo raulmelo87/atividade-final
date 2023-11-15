@@ -7,9 +7,9 @@ public class Aluno extends Pessoa{
     public String estaAprovado (float nota){
 
         if (nota >6){
-            return "aprovado";
+            return "Aprovado";
         }else {
-            return "reprovado";
+            return "Reprovado";
         }
 
     }
