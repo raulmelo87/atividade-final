@@ -18,6 +18,11 @@ public class Main {
         System.out.println("Nome do aluno: " + nomeAluno + ", Curso: " + cursoAluno + ", Status de aprovação: " + statusAprovacao);
         System.out.println("---------------------------------------------------------------------------------");
 
-
+        Professor Prof = new Professor( "João", 27, "Masculino", "Tecnologia", 7000);
+        Prof.aumentarSalario(500);
+        Prof.mudarArea("Produto");
+        float verSalario = Prof.getSalario();
+        String verArea = Prof.getArea();
+        System.out.println("Salário: " + verSalario + ", Área: " + verArea );
     }
 }
