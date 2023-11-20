@@ -13,7 +13,7 @@ public class Pessoa {
         this.idade++;
     }
 
-    public void alterSexo(String sexo) {
+    public void alterarSexo(String sexo) {
         this.sexo = sexo;
     }
 
