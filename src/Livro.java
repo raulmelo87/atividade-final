@@ -23,7 +23,7 @@ public class Livro {
     }
 
     // MÉTODO
-    // CONSTRUTOR--------------------------------------------------------------------
+    // CONSTRUTOR---------------------------------------------------------------------
     public Livro(String titulo, String autor) {
         this.titulo = titulo;
         this.autor = autor;
