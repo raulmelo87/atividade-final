@@ -1,40 +1,57 @@
 public class Pessoa {
-    //ATRIBUTOS----------------------------------------------------------------------------
+    // ATRIBUTOS----------------------------------------------------------------------------
     private String nome;
     private int idade;
     private String sexo;
 
-    //MÉTODOS------------------------------------------------------------------------------
-    public void alterarNome(String nome){ this.nome = nome;}
-    public void fazerAniversario() { this.idade ++ ;}
+    // MÉTODOS------------------------------------------------------------------------------
+    public void alterarNome(String nome) {
+        this.nome = nome;
+    }
 
-    //MÉTODO CONSTRUTOR---------------------------------------------------------------------
+    public void fazerAniversario() {
+        this.idade++;
+    }
+
+    public void alterSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    // MÉTODO
+    // CONSTRUTOR---------------------------------------------------------------------
     public Pessoa(String nome, int idade, String sexo) {
         this.nome = nome;
         this.idade = idade;
         this.sexo = sexo;
     }
-    //GETTERS AND SETTERS------------------------------------------------------------------
+
+    // GETTERS AND
+    // SETTERS------------------------------------------------------------------
     public String getNome() {
         return nome;
     }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
+
     public int getIdade() {
         return idade;
     }
+
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
     public String getSexo() {
         return sexo;
     }
+
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 
-    //ToSTRING---------------------------------------------------------------------------
+    // ToSTRING---------------------------------------------------------------------------
     @Override
     public String toString() {
         return "Pessoa{" +
@@ -42,5 +59,5 @@ public class Pessoa {
                 ", idade=" + idade +
                 ", sexo='" + sexo + '\'' +
                 '}';
-    }    
+    }
 }
