@@ -14,6 +14,8 @@ public class Aluno extends Pessoa{
 
     }
 
+    public void mudarCurso(String curso){this.curso = curso;}
+
     //MÉTODO CONSTRUTOR---------------------------------------------------------------------
     public Aluno(String nome, int idade, String sexo, String curso, float nota) {
         super(nome, idade, sexo);
