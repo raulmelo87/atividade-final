@@ -10,6 +10,9 @@ public class Livro {
     public void consultarLivro() {
         System.out.println("Livro: " + getTitulo() + ", autor: " + getAutor() + ", localizado: " + getLocalizacao());
     }
+    public void atualizarLocalizacao(String local){
+        this.localizacao=local;
+    }
 
     public void emprestarLivro(String localizacao) {
         this.localizacao = localizacao;
