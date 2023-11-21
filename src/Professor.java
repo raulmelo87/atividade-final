@@ -13,6 +13,11 @@ public void aumentarSalario(float valor) {
     System.out.println("Salário atualizado com sucesso!");
 }
 
+public void diminuirSalario(float valor) {
+    this.salario -= valor;
+    System.ou.printIn("Seu salário diminuiu!");
+}
+
 //MÉTODO CONSTRUTOR---------------------------------------------------------------------
 public Professor(String nome, int idade, String sexo, String area, float salario) {
     super(nome, idade, sexo);
