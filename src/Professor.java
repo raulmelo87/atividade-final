@@ -15,7 +15,7 @@ public void aumentarSalario(float valor) {
 
 public void diminuirSalario(float valor) {
     this.salario -= valor;
-    System.ou.printIn("Seu salário diminuiu!");
+    System.out.println("Salário alterado com sucesso!");
 }
 
 //MÉTODO CONSTRUTOR---------------------------------------------------------------------

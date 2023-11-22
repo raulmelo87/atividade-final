@@ -16,6 +16,11 @@ public class Funcionario extends Pessoa {
         this.salario += valor;
     }
 
+    public void diminuirSalario(float valor) {
+        this.salario -= valor;
+        System.out.println("Salário alterado com sucesso!");
+    }
+
     // metodo construtor
     public Funcionario(String nome, int idade, String sexo, String setor, float salario) {
         super(nome, idade, sexo);
